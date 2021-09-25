@@ -2,11 +2,14 @@
   "name": "time-based-sequence-character",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
   "scripts": {
     "test": "jest",
     "test:watch": "jest --watch",
-    "dev": "nodemon src/index.ts"
+    "dev": "nodemon src/index.ts",
+    "prebuild": "rm -rf dist",
+    "build": "tsc -p tsconfig.build.json"
   },
   "repository": {
     "type": "git",
