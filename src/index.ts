@@ -1,0 +1,1 @@
+export { getTimeBasedCharacter } from './getTimeBasedCharacter';
