@@ -3,4 +3,4 @@ tsconfig.json
 tsconfig.build.json
 .eslintrc.json
 .prettierrc
-.babel.config.js
+babel.config.js
