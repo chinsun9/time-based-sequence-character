@@ -1,5 +1,5 @@
 {
-  "name": "time-based-sequence-character",
+  "name": "@chinsun9/time-based-sequence-character",
   "version": "1.0.0",
   "description": "",
   "main": "dist/index.js",
