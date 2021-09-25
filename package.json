@@ -22,6 +22,9 @@
     "url": "https://github.com/chinsun9/time-based-sequence-character/issues"
   },
   "homepage": "https://github.com/chinsun9/time-based-sequence-character#readme",
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com/"
+  },
   "devDependencies": {
     "@babel/core": "^7.15.5",
     "@babel/preset-env": "^7.15.6",
