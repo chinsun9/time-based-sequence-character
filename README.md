@@ -8,14 +8,14 @@
 ## Install
 
 ```sh terminal
-npm install @chinsun9/time-based-sequence-character
+npm install time-based-sequence-character
 ```
 
 ## Usage
 
 ```ts example.ts
 // example
-import { getTimeBasedCharacter } from '@chinsun9/time-based-sequence-character';
+import { getTimeBasedCharacter } from 'time-based-sequence-character';
 
 // 한 시간마다 애국가 한 음절을 반환
 const char = getTimeBasedCharacter(new Date().getTime());
@@ -24,7 +24,7 @@ console.log({ char });
 
 ```ts custom example.ts
 // custom example
-import { TimeBasedSequenceCharacter } from '@chinsun9/time-based-sequence-character';
+import { TimeBasedSequenceCharacter } from 'time-based-sequence-character';
 
 // 현재 시간을 기준으로 10초마다 '0', '1', '0', '1', '0', '1',...
 const curTime = new Date().getTime();
