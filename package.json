@@ -1,7 +1,7 @@
 {
-  "name": "@chinsun9/time-based-sequence-character",
-  "version": "1.0.3",
-  "description": "",
+  "name": "time-based-sequence-character",
+  "version": "1.0.4",
+  "description": "get time based sequential string",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
   "scripts": {
@@ -15,16 +15,16 @@
     "type": "git",
     "url": "git+https://github.com/chinsun9/time-based-sequence-character.git"
   },
-  "keywords": [],
-  "author": "",
+  "keywords": [
+    "time-based",
+    "sequence"
+  ],
+  "author": "chinsun9 <chin_sung@naver.com>",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/chinsun9/time-based-sequence-character/issues"
   },
   "homepage": "https://github.com/chinsun9/time-based-sequence-character#readme",
-  "publishConfig": {
-    "registry": "https://npm.pkg.github.com/"
-  },
   "devDependencies": {
     "@babel/core": "^7.15.5",
     "@babel/preset-env": "^7.15.6",
