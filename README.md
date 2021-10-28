@@ -28,7 +28,11 @@ import { TimeBasedSequenceCharacter } from 'time-based-sequence-character';
 
 // 현재 시간을 기준으로 10초마다 '0', '1', '0', '1', '0', '1',...
 const curTime = new Date().getTime();
-const tbsc = new TimeBasedSequenceCharacter(curTime, 10, ['0', '1']);
+const tbsc = new TimeBasedSequenceCharacter({
+  baseTime: curTime,
+  gap: 10,
+  arr: ['0', '1'],
+});
 const char = tbsc.getTimeBasedCharacter(curTime);
 console.log({ char }); // { char: '0' }
 
