@@ -1,7 +1,7 @@
 /* eslint-disable no-plusplus */
 import { BASE_TIME } from '../baseTime';
 import { getTimeBasedCharacter } from '../getTimeBasedCharacter';
-import anthemCharacters from '../anthem.json';
+import { anthemCharacters } from '../anthem';
 
 const oneHour = 3600 * 1000;
 describe('BASE_TIEM으로부터 연속된 테스트', () => {

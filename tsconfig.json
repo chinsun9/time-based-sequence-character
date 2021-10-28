@@ -4,7 +4,7 @@
     "lib": ["es6", "esnext", "dom"],
     "module": "commonjs",
     "rootDir": "./src",
-    "resolveJsonModule": true,
+    "resolveJsonModule": false,
     "declaration": true,
     "outDir": "./dist",
     "esModuleInterop": true,
