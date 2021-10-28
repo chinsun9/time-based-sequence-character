@@ -20,7 +20,10 @@ describe('인자없이 테스트', () => {
 });
 
 describe('baseTime, gap 인자 테스트', () => {
-  const tbsc = new TimeBasedSequenceCharacter(0, 1000);
+  const tbsc = new TimeBasedSequenceCharacter({
+    baseTime: 0,
+    gap: 1000,
+  });
   const getTimeBasedCharacterWithSecond = (s: number) =>
     tbsc.getTimeBasedCharacter(s * 1000);
 
@@ -45,7 +48,11 @@ describe('baseTime, gap 인자 테스트', () => {
 });
 
 describe('arr 인자 테스트', () => {
-  const tbsc = new TimeBasedSequenceCharacter(0, 10, ['0', '1']);
+  const tbsc = new TimeBasedSequenceCharacter({
+    baseTime: 0,
+    gap: 10,
+    arr: ['0', '1'],
+  });
   const getTimeBasedCharacterWithSecond = (s: number) =>
     tbsc.getTimeBasedCharacter(s * 1000);
 

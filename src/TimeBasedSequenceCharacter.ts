@@ -1,22 +1,28 @@
-import anthemCharacters from './anthem.json';
+import { anthemCharacters } from './anthem';
 import { BASE_TIME } from './baseTime';
 
-class TimeBasedSequenceCharacter {
-  baseTime: number = BASE_TIME;
+type OptionType<T> = {
+  baseTime: number;
+  gap: number;
+  arr: T[];
+};
 
-  gap: number = 3600;
+class TimeBasedSequenceCharacter<T = string> {
+  baseTime: number;
 
-  arr: string[] = anthemCharacters;
+  gap: number;
+
+  arr: (T | string)[];
 
   /**
    * @param baseTime default unit: millisecond
    * @param gap default unit: second
    * @param arr default: Korean national anthem
    */
-  constructor(baseTime?: number, gap?: number, arr?: string[]) {
-    if (baseTime !== undefined) this.baseTime = baseTime;
-    if (gap !== undefined) this.gap = gap;
-    if (arr !== undefined) this.arr = arr;
+  constructor({ baseTime, gap, arr }: Partial<OptionType<T>> = {}) {
+    this.baseTime = baseTime ?? BASE_TIME;
+    this.gap = gap ?? 3600;
+    this.arr = arr || anthemCharacters;
   }
 
   /**

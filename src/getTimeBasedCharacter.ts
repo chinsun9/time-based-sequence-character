@@ -1,4 +1,4 @@
-import anthemCharacters from './anthem.json';
+import { anthemCharacters } from './anthem';
 import { BASE_TIME } from './baseTime';
 
 function getTimeBasedCharacter(time: number) {
